@@ -1,0 +1,29 @@
+{
+  "name": "chatapp_backend",
+  "version": "0.0.1",
+  "description": "Backend for Chat app made using Nodejs. ",
+  "homepage": "https://github.com/dead-shadow-7/chatapp#readme",
+  "bugs": {
+    "url": "https://github.com/dead-shadow-7/chatapp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dead-shadow-7/chatapp.git"
+  },
+  "license": "ISC",
+  "author": "Dead Shadow",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
