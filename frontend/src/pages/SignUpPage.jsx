@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
 import { MessageSquare, User, EyeOff, Eye, Lock, Loader2 } from "lucide-react";
 const SignUpPage = () => {
@@ -114,6 +115,14 @@ const SignUpPage = () => {
               )}
             </button>
           </form>
+          <div className="text-center">
+            <p className="text-base-content/60">
+              Already have an account?{" "}
+              <Link to="/login" className="link link-primary">
+                Sign in
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
