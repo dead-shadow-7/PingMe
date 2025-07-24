@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
 import { MessageSquare, User, EyeOff, Eye, Lock, Loader2 } from "lucide-react";
+import AuthImagePattern from "../components/AuthImagePattern";
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -15,6 +16,7 @@ const SignUpPage = () => {
     e.preventDefault();
   };
   return (
+    // Left Side
     <div className="min-h-screen grid lg:grid-cols-2">
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
@@ -125,6 +127,11 @@ const SignUpPage = () => {
           </div>
         </div>
       </div>
+      {/* // Right Side */}
+      <AuthImagePattern
+        title="Join our Community"
+        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+      />
     </div>
   );
 };
